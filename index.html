@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script>
+            function greeting(){
+                document.getElementById('demo').innerHTML = 'Hello Thanapon';
+                let name=prompt("Please input your name")
+                window.alert('Hello '+name);
+                document.getElementById('demo').innerHTML = 'Hello ' + name;
+            }
 
-<head>
-    <title>Page Title</title>
-</head>
+            function changeTored(){
+                document.getElementById('demo').style.color='red';
+            }
 
+            function changeToDog(){
+                document.getElementById('pic').src="https://th.bing.com/th/id/OIP.roDEuCcmkJZbQ7jGL5lQbAHaLN?pid=ImgDet&rs=1";
+                document.getElementById('pic').width="300"
+                document.getElementById('pic').width="300"
+            }
+            function changeToCat(){
+                document.getElementById('pic').src="https://cdn.guff.com/site_0/media/32000/31813/items/b48f07bc39a272cb1dd3ef5d.jpg";
+                document.getElementById('pic').width="300"
+                document.getElementById('pic').width="300"
+            }
+        </script>
+    </head>
 <body>
-    <img src="https://www.bing.com/th?id=OIP.PBwNTs5uUiy5_dNk6xtFEgHaHg&w=248&h=251&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2">
-    <img src="https://www.bing.com/th?id=OIP.PBwNTs5uUiy5_dNk6xtFEgHaHg&w=248&h=251&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2">
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
-    <h2>Thanappon</h2>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="greeting()">
+Click me to display Date and Time.</button>
+
+<button type="button"
+onclick="changeTored()">
+Click to change the color.</button>
+
+<img id="pic" width="300" height="300" src="https://cdn.guff.com/site_0/media/32000/31813/items/b48f07bc39a272cb1dd3ef5d.jpg"><br>
+<button type="button"
+onclick="changeToDog()">Dog</button>
+<button type="button"
+onclick="changeToCat()">Cat</button>
+
+<p id="demo"></p>
 
 </body>
-
-</html>
+</html> 
